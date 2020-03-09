@@ -1,0 +1,94 @@
+@import url(http://allfont.net/allfont.css?fonts=star-jedi);
+
+.head{
+    background-color: black;
+}
+
+
+.title{
+    font-family: 'Star Jedi', arial;
+    color:#FBE122;
+}
+
+.subtitle{
+    font-family: 'Star Jedi', arial;
+    color:#FBE122;
+}
+
+.body{
+    height: fit-content;
+    width: 1800px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+.films{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.film{
+    background-color: black;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid #FBE122;
+    border-radius: 4px;
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+}
+.image{
+    display: flex;
+    height: 250px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.episode{
+    font-size: .77em;
+}
+
+.info{
+    padding: 10px;
+    margin: 10px;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
+
+.top{
+    display: flex;
+}
+
+.text{
+    display: flex;
+    flex-direction:column;
+}
+.charimage{
+    display: flex;
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.charinfo{
+    display: flex;
+    flex-direction:column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.x{
+    font-size: 2em;
+    color: #FBE122;
+}
