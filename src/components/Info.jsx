@@ -10,7 +10,6 @@ const Info = (props) => {
     console.log(filtered);
     return (
         <div className="info">
-            
             {(filtered[0] !== "" && props.film !== null)?
                 <div className="all">
                     <div className="top">
@@ -24,7 +23,6 @@ const Info = (props) => {
                         <div><span>Plot:   {filtered[0].opening_crawl}</span></div>
                     </div>
                 </div>
-
                 <div className="down">
                     {filtered[0].characters.map(item => {
                         return <div className="charimage">
@@ -36,13 +34,9 @@ const Info = (props) => {
                         </div>
                     })}
                 </div> 
-                    </div>
-                    
-                
-                   
+                    </div> 
             :null
             }
-
         </div>
     );
 };
