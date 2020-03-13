@@ -6,7 +6,7 @@ const Films = (props) => {
     return (
         <div className='films'>
             {props.data.map(item => {
-                return <Film filmInfo={item} onClick={{onFilm:props.onClick.onFilm}}/>
+                return <Film filmInfo={item} review = {props.review} marks = {props.marks} onClick={{onFilm:props.onClick.onFilm}}/>
             })}
         </div>
     );

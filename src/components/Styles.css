@@ -115,4 +115,7 @@
     object-fit: contain;
 }
 
-
+display1{
+    display: flex;
+    justify-content: center;
+}
