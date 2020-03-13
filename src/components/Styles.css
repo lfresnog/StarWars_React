@@ -66,6 +66,8 @@
 
 .top{
     display: flex;
+    padding: 10px;
+    margin: 10px;
 }
 
 .text{
@@ -111,4 +113,5 @@
     display: flex;
     object-fit: contain;
 }
+
 
