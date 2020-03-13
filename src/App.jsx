@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   onMarksHandler = (mark,film)=>{
-    let sum = cloneDeep(this.state.review[film-1]);
+    let sum = 0;
     const marks = cloneDeep(this.state.marks);
     let review = cloneDeep(this.state.review);
     marks[film-1].push(mark);
