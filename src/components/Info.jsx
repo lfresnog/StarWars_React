@@ -1,5 +1,6 @@
 import React from 'react';
 import './Styles.css';
+import Stars from './Stars'
 
 
 const Info = (props) => {
@@ -13,8 +14,11 @@ const Info = (props) => {
             {(filtered[0] !== "" && props.film !== null)?
                 <div className="all">
                     <div className="top">
-                    <div className="x" onClick={()=>onFilm(null)}>x</div>
-                    <div><div><img src={filtered[0].image} alt=""/></div></div>
+                        <div className="x" onClick={()=>onFilm(null)}>x</div>
+                            <div className="img">
+                                <img src={filtered[0].image} alt=""/>
+                                <Stars film = {props.film} review = {props.review} marks = {props.marks} onClick={{onMarks:props.onClick.onMarks}}/>
+                            </div>
                     <div className="text">
                         <div><h4>Title:   {filtered[0].title}</h4></div>
                         <div><h4>Episode:   {filtered[0].episode_id}</h4></div>
@@ -26,7 +30,7 @@ const Info = (props) => {
                 <div className="down">
                     {filtered[0].characters.map(item => {
                         return <div className="charimage">
-                            <img  src={item.image} alt=""/>
+                            <div className="img1"><img className="charimage1" src={item.image} alt=""/></div>
                             <div className="charinfo">
                             <h5> {`${item.name}`}</h5>
                             <h5> {`${item.actor}`}</h5>
