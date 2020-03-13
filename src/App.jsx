@@ -18,11 +18,11 @@ class App extends Component {
   }
 
   onMarksHandler = (mark,film)=>{
-    let sum = cloneDeep(this.state.review[film]);
+    let sum = cloneDeep(this.state.review[film-1]);
     const marks = cloneDeep(this.state.marks);
     let review = cloneDeep(this.state.review);
     marks[film-1].push(mark);
-    console.log(marks[film].length);
+    console.log(marks[film-1].length);
     console.log(marks);
     marks[film-1].forEach(obj => sum=obj+sum);
     console.log(sum);
